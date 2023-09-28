@@ -13,6 +13,7 @@ export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
 export type { AmarantCatalogCategory } from './models/AmarantCatalogCategory';
+export type { AmarantCatalogCategoryTree } from './models/AmarantCatalogCategoryTree';
 export type { AmarantCatalogCustomizableProductModel } from './models/AmarantCatalogCustomizableProductModel';
 export type { AmarantCatalogCustomizationOptionModel } from './models/AmarantCatalogCustomizationOptionModel';
 export type { AmarantCatalogGenericProductModel } from './models/AmarantCatalogGenericProductModel';

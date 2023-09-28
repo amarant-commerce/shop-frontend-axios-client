@@ -2,6 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { AmarantApiPaginatedCollectionResponse } from '../models/AmarantApiPaginatedCollectionResponse';
+import type { AmarantCatalogCategoryTree } from '../models/AmarantCatalogCategoryTree';
 import type { AmarantCatalogProductModel } from '../models/AmarantCatalogProductModel';
 
 import type { CancelablePromise } from '../core/CancelablePromise';
@@ -53,6 +54,19 @@ export class CatalogService {
             path: {
                 'id': id,
             },
+        });
+    }
+
+    /**
+     * Get category tree
+     * Returns the category tree
+     * @returns AmarantCatalogCategoryTree OK
+     * @throws ApiError
+     */
+    public static getCatalogCategoryTree(): CancelablePromise<AmarantCatalogCategoryTree> {
+        return __request(OpenAPI, {
+            method: 'GET',
+            url: '/api/catalog/v1/category-tree',
         });
     }
 
