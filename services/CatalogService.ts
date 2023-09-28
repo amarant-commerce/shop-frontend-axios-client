@@ -19,7 +19,7 @@ export class CatalogService {
      * @returns any OK
      * @throws ApiError
      */
-    public static catalogProductGetCollection(
+    public static getCatalogProductCollection(
         page?: number,
         itemsPerPage?: number,
         q?: any,
@@ -44,7 +44,7 @@ export class CatalogService {
      * @returns AmarantCatalogProductModel OK
      * @throws ApiError
      */
-    public static catalogProductGetItem(
+    public static getCatalogProductItem(
         id: any,
     ): CancelablePromise<AmarantCatalogProductModel> {
         return __request(OpenAPI, {

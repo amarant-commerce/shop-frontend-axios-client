@@ -62,7 +62,7 @@ export type { AmarantShippingInformationInputGroupSetCartShippingInformationInpu
 export type { AmarantShippingRate } from './models/AmarantShippingRate';
 export type { AmarantShippingRateData } from './models/AmarantShippingRateData';
 export type { AmarantShippingRateEstimation } from './models/AmarantShippingRateEstimation';
-export type { AmarantShippingRateEstimationGroupGetCartShippingRatesInput } from './models/AmarantShippingRateEstimationGroupGetCartShippingRatesInput';
+export type { AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInput } from './models/AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInput';
 export type { AmarantStoreChannel } from './models/AmarantStoreChannel';
 
 export { AliasService } from './services/AliasService';

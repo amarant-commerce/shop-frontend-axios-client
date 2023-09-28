@@ -20,7 +20,7 @@ export class DirectoryService {
      * @returns any OK
      * @throws ApiError
      */
-    public static getDirectoryCountries(
+    public static getDirectoryCountryCollection(
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -45,7 +45,7 @@ export class DirectoryService {
      * @returns any OK
      * @throws ApiError
      */
-    public static getDirectoryCountryRegions(
+    public static getDirectoryCountryRegionCollection(
         id: any,
         page?: number,
         itemsPerPage?: number,
@@ -74,7 +74,7 @@ export class DirectoryService {
      * @returns any OK
      * @throws ApiError
      */
-    public static getDirectoryCountryCities(
+    public static getDirectoryCountryCityCollection(
         id: any,
         page?: number,
         itemsPerPage?: number,
@@ -104,7 +104,7 @@ export class DirectoryService {
      * @returns any OK
      * @throws ApiError
      */
-    public static getDirectoryCountryRegionCities(
+    public static getDirectoryCountryRegionCityCollection(
         id: any,
         regionId: any,
         page?: number,

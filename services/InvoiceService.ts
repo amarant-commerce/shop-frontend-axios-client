@@ -41,7 +41,7 @@ export class InvoiceService {
      * @returns AmarantSalesInvoice OK
      * @throws ApiError
      */
-    public static getInvoice(
+    public static getInvoiceItem(
         id: any,
     ): CancelablePromise<AmarantSalesInvoice> {
         return __request(OpenAPI, {

@@ -19,8 +19,8 @@ export type OpenAPIConfig = {
 };
 
 export const OpenAPI: OpenAPIConfig = {
-    BASE: 'http://default.merchant.amarant.local',
-    VERSION: '2.4.0000',
+    BASE: 'https://default.merchant.amarant.local',
+    VERSION: '1.0.0',
     WITH_CREDENTIALS: false,
     CREDENTIALS: 'include',
     TOKEN: undefined,

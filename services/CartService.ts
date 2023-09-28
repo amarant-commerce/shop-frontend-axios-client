@@ -10,7 +10,7 @@ import type { AmarantSalesPaymentData } from '../models/AmarantSalesPaymentData'
 import type { AmarantSalesPaymentInformationInputSetCartPaymentInformationInput } from '../models/AmarantSalesPaymentInformationInputSetCartPaymentInformationInput';
 import type { AmarantShippingInformationInputGroupSetCartShippingInformationInput } from '../models/AmarantShippingInformationInputGroupSetCartShippingInformationInput';
 import type { AmarantShippingRateData } from '../models/AmarantShippingRateData';
-import type { AmarantShippingRateEstimationGroupGetCartShippingRatesInput } from '../models/AmarantShippingRateEstimationGroupGetCartShippingRatesInput';
+import type { AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInput } from '../models/AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInput';
 
 import type { CancelablePromise } from '../core/CancelablePromise';
 import { OpenAPI } from '../core/OpenAPI';
@@ -43,7 +43,7 @@ export class CartService {
      * @returns AmarantSalesOrder OK
      * @throws ApiError
      */
-    public static getCart(
+    public static getCartItem(
         uid: any,
     ): CancelablePromise<AmarantSalesOrder> {
         return __request(OpenAPI, {
@@ -182,9 +182,9 @@ export class CartService {
      * @returns any Resource created
      * @throws ApiError
      */
-    public static getCartShippingRates(
+    public static getCartShippingRateCollection(
         uid: any,
-        requestBody?: AmarantShippingRateEstimationGroupGetCartShippingRatesInput,
+        requestBody?: AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInput,
     ): CancelablePromise<(AmarantApiCollectionResponse & {
         data?: Array<AmarantShippingRateData>;
     })> {

@@ -37,7 +37,7 @@ export class CustomerService {
      * @returns AmarantCustomer OK
      * @throws ApiError
      */
-    public static getCustomer(
+    public static getCustomerItem(
         uid: any,
     ): CancelablePromise<AmarantCustomer> {
         return __request(OpenAPI, {
@@ -58,7 +58,7 @@ export class CustomerService {
      * @returns any OK
      * @throws ApiError
      */
-    public static getCustomerAddress(
+    public static getCustomerAddressItem(
         uid: any,
         page?: number,
         itemsPerPage?: number,

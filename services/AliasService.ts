@@ -18,7 +18,7 @@ export class AliasService {
      * @returns any OK
      * @throws ApiError
      */
-    public static aliasGetCollection(
+    public static getAliasCollection(
         page?: number,
         itemsPerPage?: number,
     ): CancelablePromise<(AmarantApiPaginatedCollectionResponse & {
@@ -41,7 +41,7 @@ export class AliasService {
      * @returns AmarantAliasData OK
      * @throws ApiError
      */
-    public static aliasGetMatch(
+    public static getAliasMatch(
         aliasUri: any,
     ): CancelablePromise<AmarantAliasData> {
         return __request(OpenAPI, {

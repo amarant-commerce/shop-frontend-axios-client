@@ -16,7 +16,7 @@ export class SearchService {
      * @returns AmarantSearchResultList OK
      * @throws ApiError
      */
-    public static searchGetCollection(
+    public static getSearchCollection(
         q: any,
     ): CancelablePromise<AmarantSearchResultList> {
         return __request(OpenAPI, {

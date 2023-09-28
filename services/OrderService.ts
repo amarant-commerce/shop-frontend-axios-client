@@ -18,7 +18,7 @@ export class OrderService {
      * @returns AmarantSalesOrder OK
      * @throws ApiError
      */
-    public static getOrder(
+    public static getOrderItem(
         uid: any,
     ): CancelablePromise<AmarantSalesOrder> {
         return __request(OpenAPI, {
