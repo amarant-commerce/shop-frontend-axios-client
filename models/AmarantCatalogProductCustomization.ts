@@ -8,6 +8,9 @@ import type { AmarantCatalogProductModel } from './AmarantCatalogProductModel';
 export type AmarantCatalogProductCustomization = {
     id?: number;
     options?: Array<AmarantCatalogCustomizationOptionModel>;
-    product?: AmarantCatalogProductModel;
+    productId?: (string | number);
+    productType?: string;
+    sku?: string;
+    product?: AmarantCatalogProductModel | null;
 };
 

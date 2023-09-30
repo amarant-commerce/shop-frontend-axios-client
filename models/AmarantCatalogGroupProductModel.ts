@@ -3,12 +3,12 @@
 /* eslint-disable */
 
 import type { AmarantCatalogCategory } from './AmarantCatalogCategory';
+import type { AmarantCatalogGroupProductItemModel } from './AmarantCatalogGroupProductItemModel';
 import type { AmarantCatalogPricing } from './AmarantCatalogPricing';
-import type { AmarantCatalogProductModel } from './AmarantCatalogProductModel';
 import type { AmarantMediaImage } from './AmarantMediaImage';
 
 export type AmarantCatalogGroupProductModel = {
-    groupChildren?: Array<AmarantCatalogProductModel>;
+    groupChildren?: Array<AmarantCatalogGroupProductItemModel>;
     type?: 'grouped';
     id?: (string | number);
     url?: string;

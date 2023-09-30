@@ -17,6 +17,7 @@ export type { AmarantCatalogCategoryTree } from './models/AmarantCatalogCategory
 export type { AmarantCatalogCustomizableProductModel } from './models/AmarantCatalogCustomizableProductModel';
 export type { AmarantCatalogCustomizationOptionModel } from './models/AmarantCatalogCustomizationOptionModel';
 export type { AmarantCatalogGenericProductModel } from './models/AmarantCatalogGenericProductModel';
+export type { AmarantCatalogGroupProductItemModel } from './models/AmarantCatalogGroupProductItemModel';
 export type { AmarantCatalogGroupProductModel } from './models/AmarantCatalogGroupProductModel';
 export type { AmarantCatalogInventory } from './models/AmarantCatalogInventory';
 export type { AmarantCatalogPricing } from './models/AmarantCatalogPricing';
