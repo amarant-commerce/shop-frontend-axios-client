@@ -12,6 +12,7 @@ export type { AmarantApiCollectionResponse } from './models/AmarantApiCollection
 export type { AmarantApiError } from './models/AmarantApiError';
 export type { AmarantApiLinks } from './models/AmarantApiLinks';
 export type { AmarantApiPaginatedCollectionResponse } from './models/AmarantApiPaginatedCollectionResponse';
+export type { AmarantAttributesAttributeModel } from './models/AmarantAttributesAttributeModel';
 export type { AmarantCatalogCategory } from './models/AmarantCatalogCategory';
 export type { AmarantCatalogCategoryTree } from './models/AmarantCatalogCategoryTree';
 export type { AmarantCatalogCustomizableProductModel } from './models/AmarantCatalogCustomizableProductModel';
@@ -68,6 +69,7 @@ export type { AmarantShippingRateEstimationGroupGetCartShippingRateCollectionInp
 export type { AmarantStoreChannel } from './models/AmarantStoreChannel';
 
 export { AliasService } from './services/AliasService';
+export { AttributesService } from './services/AttributesService';
 export { CartService } from './services/CartService';
 export { CatalogService } from './services/CatalogService';
 export { CustomerService } from './services/CustomerService';
